@@ -1,0 +1,308 @@
+.container {
+    max-width: 500px;
+    margin: 0 auto; 
+    padding: 20px;
+    text-align: left;
+  }
+  
+  label {
+      display: block;
+      margin-bottom: 20px;
+      font-size: 1.25em;
+    }
+  
+    input[type="text"],
+    textarea {
+      width: 100%;
+      height: 30px;
+      margin-bottom: 20px;
+      padding: 5px;
+    }
+  
+    .rating {
+     
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    
+    .rating input[type="radio"] {
+      display: none;
+    }
+    
+    /* .rating > label {
+      display: inline-block;
+      cursor: pointer;
+      width: 30px;
+      height: 30px;
+      margin-right: 5px;
+      background-image: url(star.png);
+      background-size: 30px 30px;
+      background-repeat: no-repeat;
+    }
+    
+    .rating input[type="radio"]:checked + label {
+      background-image: url(starfilled.png);
+    }
+     */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #f5f5f5;
+    }
+    
+    /* Header Styles */
+    header {
+      background-color: #000000;
+    }
+    
+    .logo {
+      max-width: 100px;
+      margin: 15px 0 0 50px;
+    }
+    
+    nav {
+      background-color: #000000;
+      overflow: hidden;
+      padding: 3px;
+      top: 0;
+    }
+    
+    .banner {
+      background-image: url(reviewbg.jpg);
+      height: 100vh;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    
+    .tag {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    
+    .title h2 {
+      transform: translateX(50px);
+      font-family: 'Belleza', sans-serif;
+      font-style: normal;
+      color: black;
+      opacity: 1;
+      font-weight: 400;
+      font-size: 68px;
+      line-height: 20px;
+      letter-spacing: 8px;
+      text-transform: uppercase;
+      margin-bottom: 50px;
+    }
+   
+    .title h2 {
+      transform: translateX(50px);
+      font-family: 'Belleza', sans-serif;
+      font-style: normal;
+      color: black;
+      opacity: 1;
+      font-weight: 400;
+      font-size: 68px;
+      line-height: 20px;
+      letter-spacing: 8px;
+      text-transform: uppercase;
+      margin-bottom: 50px;
+    }
+    .title p {
+      transform: translateX(100px);
+      font-family: 'Belleza', sans-serif;
+      font-style: normal;
+      color: #000000;
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 10px;
+    }
+    
+    nav a {
+      font-family: 'Roboto', sans-serif;
+      text-decoration: none;
+      color: #ffffff;
+      font-weight: 700;
+      display: block;
+      padding: 30px;
+      float: right;
+      font-size: 14px;
+      position: relative;
+      right: 100px;
+    }
+    
+    /* Form Styles */
+    .second-sec {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      min-height: calc(100vh - 330px); /* Adjusted to leave space for the footer */
+      background-color: white; /* Added the missing black background */
+    }
+    
+  .left-col {
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto; /* Center the form */
+    padding: 0 20px;
+    padding-top: 20px;
+  }
+  
+    
+    input,
+    textarea {
+      font-family: 'Roboto', sans-serif;
+      font-weight: bolder;
+      font-size: 20px;
+      letter-spacing: 0.5px;
+      height: 30px;
+      width: 100%;
+      border: none;
+      border-bottom: 1px solid black;
+      padding: 5px;
+      margin-top: 2px;
+      margin-bottom: 10px; /* Add some spacing between form elements */
+    }
+    textarea{
+      text-align: left;;
+    }
+    
+    input:focus,
+    textarea:focus {
+      outline: none;
+    }
+  /* Button Styles */
+  button {
+    background-color: white;
+    color: #005436;
+    border: 1.5px solid #005436;
+    height: 50px;
+    width: 200px;
+    padding: 10px 30px;
+    margin: 20px auto; /* Center the button */
+    font-size: 12px;
+    border-radius: 2px;
+    display: block;
+  }
+    
+    button:hover {
+      background-color: #005436;
+      color: #ffffff;
+    }
+    
+    /* Footer Styles */
+    .last-sec {
+      height: 330px;
+      background-color: #000000;
+  }
+  
+  
+  .last-sec h3 {
+      position: relative;
+      top: 80px;
+      right: 430px;
+      float: right;
+      font-family: 'Belleza';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 25px;
+      line-height: 30px;
+      color: white;
+      z-index: 2;
+  }
+  
+  .last-sec nav {
+      position: relative;
+      top: 150px;
+      padding-right: 10px;
+  
+      left: 100px;
+  }
+  .last-text {
+      color: #9C9C9C;
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight:600;
+      font-size: 16px;
+      line-height: 22px;
+      max-width: 300px;
+      transform: translateY(90px);
+      margin-left: 140px;
+      letter-spacing: 0.18px;
+      text-align: justify;
+      float: left;
+  }
+  a i.facebook {
+      color: #9c9c9c;
+      position: relative;
+      top: 200px;
+      right: 300px;
+      margin-right: 15px;
+  }
+  
+  .last-sec nav a {
+      text-transform: uppercase;
+      font-size: small;
+      color: #f9f9f9f9;
+      padding-top: 0;
+  }
+  
+  
+  @media (max-width: 480px) { /* Mobile devices */
+    .container {
+      max-width: 95%; /* Adjust the maximum width for smaller screens */
+    }
+  
+    .logo {
+      max-width: 80px;
+    }
+  
+    nav a {
+      padding: 15px; /* Adjust the padding for smaller screens */
+    }
+  
+    .left-col {
+      padding: 0 10px; /* Adjust the padding for smaller screens */
+    }
+  
+    button {
+      width: 100%; /* Make the button full-width on smaller screens */
+    }
+  
+    .last-sec h3 {
+      font-size: 20px; /* Adjust the font size for smaller screens */
+    }
+  }
+
+  .rating {
+    direction: rtl; /* Ensure that stars are rendered right to left */
+    display: inline-flex;
+}
+
+.rating input[type="radio"] {
+    display: none; /* Hide radio buttons */
+}
+
+.rating label {
+    font-size: 2rem;
+    color: #ccc;
+    cursor: pointer;
+}
+
+.rating label:hover,
+.rating label:hover ~ label {
+    color: gold; /* Color all stars on hover */
+}
+
+.rating input[type="radio"]:checked ~ label {
+    color: gold; /* Color all stars after checked */
+}
+
+/* Success message styling */
+.success-message {
+    color: green;
+    margin-top: 10px;
+    font-weight: 850;
+}

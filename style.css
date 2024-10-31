@@ -1,0 +1,349 @@
+*{
+    box-sizing: border-box;
+
+}
+body {
+    margin: 0px;
+}
+
+.first-sec {
+    margin-bottom: 60px;
+    width: auto;
+    height: 100vh;
+    background-color: #000000;
+    position: relative;
+}
+
+.logo {
+    max-width: 100px;
+    margin: 15px 0px 0px 50px;
+}
+
+.banner{
+    background-image: url(Pic/kitchen.png);
+   height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center top;
+background-repeat: no-repeat;
+
+}
+
+.title{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    min-height: 100%;
+top: 45%;
+}
+.title h1 {
+  transform: translateY(-20px);
+    font-family: 'Belleza';
+    font-style: normal;
+    color: #FFFFFF;
+    opacity: 1;
+    font-weight: 400;
+    font-size: 68px;
+    line-height: 0px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+.title p{
+
+    font-family: 'Belleza';
+    font-style: normal;
+    color: #FFFFFF;
+    font-weight: 300;
+    line-height: 20px;
+    font-size: 21px;
+    letter-spacing: 1.28px;
+}
+
+
+
+
+nav{
+    background-color: #000000;
+    overflow: hidden;
+    padding: 3px;
+
+}
+
+nav a {
+    font-family: 'roboto';
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    display: block;
+    padding: 30px 7px;  /*7 back to 30 */
+    float: right;
+    font-size: 14px;
+    position: relative;
+    right: 100px;
+}
+a:hover{
+    text-decoration: none;
+    color: #9c9c9c;
+}
+
+.middle {
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.middle p {
+    font-family: 'Belleza';
+    letter-spacing: 5px;
+    position: absolute;
+    top: 48%;
+    left: 44%;
+    font-size: small;
+    line-height: 22px;
+    font-weight: 100;
+    font-family: 'Belleza';
+}
+
+.middle h1 {
+    position: absolute;
+    top: 46%;
+    left: 36.5%;
+    letter-spacing: 5px;
+    font-size: 64px;
+    font-weight: 400;
+    font-style: normal;
+    font-family: 'Belleza';
+
+}
+
+.second-sec {
+    height: 600px;
+    margin-top: 120px;
+}
+
+.about-us {
+    text-align: center;
+    animation: anim 2s ease-in-out;
+}
+
+.about-us h1 {
+    font-family: 'Belleza';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 64px;
+    padding: 10px;
+    animation: anim 2s ease-in-out;
+}
+
+.about-us p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 33px;
+    margin: 0px 280px;
+}
+
+.third-sec {
+    height: 950px;
+    margin: 0 50px;
+    position: relative;
+
+}
+
+.left-img {
+    width: 660px;
+    height: 880px;
+    padding: 0px 30px 0px 30px;
+    float: left;
+    animation: slide 2s linear forwards; 
+    
+}
+
+.third-sec h2 span {
+    position: relative;
+    right: 10px;
+
+    font-family: 'Belleza';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 50px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.third-sec p {
+    position: relative;
+    left: 30px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    margin-right: 60px;
+    padding-bottom: 10px;
+    letter-spacing: -0.2px;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    animation: anim 2s ease-in-out;
+}
+
+.vline {
+    border: 1px solid #005436;
+    height: 40px;
+    width: 0px;
+    position: absolute;
+    left: 670px;
+    padding: 0px;
+}
+
+.vline2 {
+    border: 1px solid #005436;
+    width: 0px;
+    height: 40px;
+    position: absolute;
+    left: 20px;
+}
+
+.right-img {
+    position: relative;
+    display: inline-block;
+    left: 30px;
+    width: 660px;
+    height: 770px;
+    animation: slide 2s linear forwards; 
+
+}
+.fourth-sec {
+    height: 700px;
+    background-color: #F8F9F7;
+    margin: 200px 0px 0px 0px;
+    padding: 80px 0px;
+}
+/* .fourth-sec p,h2{
+    animation: anim 2s ease-in-out;
+} */
+
+/* @keyframes anim {
+    0% {
+      opacity: 0;
+      transform: translate3d(0,40%,0);}
+    100% {
+      opacity: 1;
+      transform: none;}
+  } */
+
+.rightt-img {
+    float: right;
+    width: 645px;
+    margin-right: 50px;
+    clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+    /* Initial clip-path to hide the element */
+    animation: slide 2s linear forwards;
+}
+
+/* Define the animation */
+@keyframes slide {
+    to {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+}
+
+/* @keyframes slide {
+    from{
+      clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+  
+    }
+    to{
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+  } */
+
+.last-content {
+    position: relative;
+    margin-right: 800px;
+    left: 30px;
+    margin-top: 0px;
+}
+
+.last-content h2 {
+    font-family: 'Belleza';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 48px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+
+}
+
+.last-content p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: justify;
+    margin-left: 50px;
+}
+
+.fifth-sec {
+    height: 330px;
+    background-color: #000000;
+    position: relative;
+}
+
+.fifth-sec h3 {
+    position: relative;
+    top: 80px;
+    right: 430px;
+    float: right;
+    font-family: 'Belleza';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 30px;
+    color: white;
+    z-index: 2;
+}
+
+.fifth-sec nav {
+    position: relative;
+    top: 150px;
+    padding-right: 10px;
+
+    left: 100px;
+}
+
+.last-text {
+    color: #9C9C9C;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight:600;
+    font-size: 16px;
+    line-height: 22px;
+    max-width: 300px;
+    transform: translateY(90px);
+    margin-left: 140px;
+    letter-spacing: 0.18px;
+    text-align: justify;
+    float: left;
+}
+a i.facebook {
+    color: #9c9c9c;
+    position: relative;
+    top: 200px;
+    right: 300px;
+    margin-right: 15px;
+}
+ 
+
+.fifth-sec nav a {
+    text-transform: uppercase;
+    font-size: small;
+    color: #f9f9f9f9;
+    padding-top: 0;
+}

@@ -1,0 +1,303 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+.main{ height: 800px;}
+
+.header {
+    width: auto;
+    min-height: 600px;
+    max-height: 900px;
+}
+.banner {
+    background-image: url(Pic/Clear/Plumber.jpg);
+    height: 800px;
+    width: 100%;
+    background-size: cover;
+    background-position: center -200px;
+    background-repeat: no-repeat;
+}
+
+.tag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 700px;
+}
+
+    .title {
+        font-family: 'Belleza';
+        font-style: normal;
+        color: #FFFFFF;
+        opacity: 1;
+        font-weight: 400;
+        font-size: 68px;
+        line-height: 20px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        margin-bottom: 50px;
+    }
+
+.logo {
+    max-width: 100px;
+    margin: 15px 0px 0 50px;
+}
+
+nav {
+    background-color: #000000;
+    overflow: hidden;
+    padding: 3px;
+    top: 0px;
+    opacity: .9;
+}
+
+nav a {
+    font-family: 'roboto';
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    display: block;
+    padding: 30px 30px;
+    float: right;
+    font-size: 14px;
+    position: relative;
+    right: 100px;
+}
+.main h1{
+    font-family: 'Belleza';
+font-style: normal;
+font-weight: 400;
+font-size: 70px;
+line-height: 64px;
+text-align: center;
+color: #000000;
+margin-top: 90px;
+margin-bottom: 75px;
+text-transform: capitalize;
+}
+.main p{
+    margin: 40px 100px 20px 100px;
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+text-align: center;
+line-height: 30px;
+}
+button{
+    text-align: center;
+    transform: translateX(680px);
+    background-color: white;
+    margin: 50px 0px 80px 0;
+    color: #005436;
+    border: 1.5px solid #005436;
+    height: 50px;
+    width: 180px;
+    text-transform: uppercase;
+    font-size: 11spx;
+    border-radius: 2px;
+}
+button:hover{
+    background-color: #005436;
+    color: #FFFFFF;
+}
+.footer {
+    height: 330px;
+    background-color: #000000;
+}
+
+.footer h3 {
+    position: relative;
+    top: 80px;
+    right: 430px;
+    float: right;
+    font-family: 'Belleza';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 30px;
+    color: white;
+    z-index: 2;
+}
+
+.footer nav {
+    position: relative;
+    top: 150px;
+    padding-right: 10px;
+
+    left: 100px;
+}
+
+.last-text {
+    color: #9C9C9C;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    max-width: 300px;
+    transform: translateY(90px);
+    margin-left: 140px;
+    letter-spacing: 0.18px;
+    text-align: justify;
+    float: left;
+}
+
+a i.facebook {
+    color: #9c9c9c;
+    position: relative;
+    top: 200px;
+    right: 300px;
+    margin-right: 15px;
+}
+
+.footer nav a {
+    text-transform: uppercase;
+    font-size: small;
+    color: #f9f9f9f9;
+    padding-top: 0;
+}
+@media (max-width: 860px) {
+    .title {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 50px;
+   transform: translateY(-70px);
+    }
+    .logo {
+      margin: 10px 0px 0 30px;
+    }
+  
+    nav a {
+      font-size: 12px;
+      padding: 20px 20px;
+      right: 30px;
+      margin-top: 10px;
+    }
+  
+    .main h1 {
+      font-size: 45px;
+      line-height: 50px;
+      margin-top: 70px;
+      margin-bottom: 60px;
+    }
+  
+    .main p {
+      margin: 30px 60px;
+      font-size: 18px;
+      line-height: 28px;
+    }
+  
+    button {
+    transform: translate(40vw, 20px);
+      margin: 0 auto 70px;
+      font-size: 12px;
+      width: 160px;
+      height: 45px;
+    }
+    .footer{
+        height: 300px;
+    }
+  
+    .footer h3 {
+      right: 0;
+      font-size: 22px;
+      line-height: 28px;
+      top: 70px;
+      right: 270px;
+    }
+    .main{
+        height: 800px;
+    }
+  
+    .footer nav {
+      left: 100px;
+      top: 100px;
+    }
+    .footer nav a{
+        font-size: 12px;
+        padding: 15px;
+    }
+  
+    .last-text {
+      max-width: 230px;
+      transform: translate(70px,150px);
+      margin: 0 30px 30px;
+      text-align: center ;
+      font-size: 16px;
+      line-height: 20px;
+    }
+  
+    a i.facebook {
+      top: 100px;
+      right: 20vw;
+      margin-right: 10px;
+    }
+  }
+  
+  @media (max-width: 680px) {
+    .title {
+      font-size: 48px;
+    }
+  
+    .logo {
+      margin: 15px 0px 0 20px;
+    }
+  
+    nav a {
+      font-size: 12px;
+      padding: 20px 15px;
+      right: 20px;
+    }
+  
+    .main h1 {
+      font-size: 40px;
+    }
+  
+    .main p {
+      margin: 20px 40px;
+      font-size: 16px;
+    }
+  
+    button {
+      transform: 50vw;
+      margin: 30px auto 60px;
+      width: 130px;
+      font-size: x-small;
+    }
+  
+    .footer h3 {
+        top: 50px;
+      right: 180px;
+    }
+    .footer nav a{
+        padding: 5px 20px;
+    }
+    .footer nav {
+        display: flex;
+        padding: 10px 0 ;
+        width: 120px;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        top: 75px;
+      left: 270px;
+    }
+  
+    .last-text {
+      max-width: 170px;
+      transform: translate(40px,140px);
+      margin: 0 20px 30px;
+      text-align: center;
+    }
+  
+    a i.facebook {
+      top: 90px;
+      right: 160px;
+      margin-right: 10px;
+    }
+  }

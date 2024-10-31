@@ -1,0 +1,274 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.header {
+    box-sizing: border-box;
+    width: auto;
+    min-height: 600px;
+    max-height: 800px;
+    background-color: #000000;
+}
+
+.banner {
+    background-image: url(office\ home.jpg);
+    height: 800px;
+    width: 100%;
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+.tag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 700px;
+}
+
+.title {
+
+    font-family: 'Belleza';
+    font-style: normal;
+    /* color: #FFFFFF; */
+    color: #005436;
+    opacity: 1;
+    font-weight: 400;
+    font-size: 70px;
+    line-height: 48px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.logo {
+    max-width: 80px;
+}
+
+nav {
+    background-color: #000000;
+    overflow: hidden;
+    padding: 3px;
+    top: 0px;
+    opacity: .9;
+    height: 80px;
+}
+.nav-link{
+    color: #FFFFFF;
+}
+
+nav a {
+    font-family: 'roboto';
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    display: block;
+    padding: 30px 7px;        /*    7 back to 30 */
+    float: right;
+    font-size: 14px;
+    position: relative;
+    right: 100px;
+}
+a:hover{
+    text-decoration: none;
+    color: #9c9c9c;
+}
+
+.main h1{
+    font-family: 'Belleza';
+font-style: normal;
+font-weight: 400;
+font-size: 75px;
+line-height: 64px;
+text-align: center;
+color: #005436;
+margin-bottom: 120px;
+text-transform: capitalize;
+animation: anim 2s ease-in-out 2;
+}
+
+@keyframes anim {
+    0% {
+      opacity: 0;
+      transform: translate3d(0,40%,0);}
+    100% {
+      opacity: 1;
+      transform: none;}
+  }
+
+.main{
+    margin: 0px 120px;
+}
+.main h2{
+    font-family: 'Belleza';
+font-style: normal;
+font-weight: 400;
+font-size: 42px;
+line-height: 48px;
+text-transform: uppercase;
+margin-bottom: 8px;
+}
+
+.second-sec button ,.fourth-sec button,.fifth-sec button, .sixth-sec button ,.seventh-sec button,.eighth-sec button, .ninth-sec button ,.tenth-sec button {
+    margin-top: 20px;
+}
+
+.main p{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 550;
+    font-size: 17.5px;
+    line-height: 27px;
+    margin-top: 0;
+    text-align: justify;
+}
+.first-img, .third-img ,.fifth-img,.seventh-img,.ninth-img{
+    float: left;
+    width: 430px;
+   margin: 0px 40px 40px 0px;
+}
+.second-img, .fourth-img ,.sixth-img,.eighth-img,.tenth-img{
+    float: right;
+    width: 430px;
+    margin:0px 0px 40px 40px;
+}
+.tenth-sec{
+    margin-bottom: 100px;
+}
+hr{
+    clear: both;
+    margin: 60px 0px;
+}
+button{
+    background-color: white;
+    color: #005436;
+    border: 1.5px solid #005436;
+    height: 50px;
+    width: 180px;
+    text-transform: uppercase;
+    font-size: 11spx;
+    border-radius: 2px;
+}
+button:hover{
+    background-color: #005436;
+    color: #FFFFFF;
+}
+
+
+/* .footer {
+    height: 330px;
+    background-color: #000000;
+}
+.footer h3 {
+    position: relative;
+    top: 80px;
+    right: 430px;
+    float: right;
+    font-family: 'Belleza';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 30px;
+    color: white;
+    z-index: 2;
+}
+
+.footer nav {
+    position: relative;
+    top: 150px;
+    padding-right: 10px;
+
+    left: 100px;
+}
+
+.last-text {
+    color: #9C9C9C;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    max-width: 300px;
+    transform: translateY(90px);
+    margin-left: 140px;
+    letter-spacing: 0.18px;
+    text-align: justify;
+    float: left;
+}
+
+a i.facebook {
+    color: #9c9c9c;
+    position: relative;
+    top: 200px;
+    right: 300px;
+    margin-right: 15px;
+}
+
+.footer nav a {
+    text-transform: uppercase;
+    font-size: small;
+    color: #f9f9f9f9;
+    padding-top: 0;
+} */
+
+.footer {
+    height: 330px;
+    background-color: #000000;
+}
+
+.footer h3 {
+    position: relative;
+    top: 80px;
+    right: 430px;
+    float: right;
+    font-family: 'Belleza';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 30px;
+    color: white;
+    z-index: 2;
+}
+
+.footer nav {
+    position: relative;
+    top: 150px;
+    padding-right: 10px;
+
+    left: 100px;
+}
+
+.last-text {
+    color: #9C9C9C;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    max-width: 300px;
+    transform: translateY(90px);
+    margin-left: 140px;
+    letter-spacing: 0.18px;
+    text-align: justify;
+    float: left;
+}
+
+a i.facebook {
+    color: #9c9c9c;
+    position: relative;
+    top: 200px;
+    right: 300px;
+    margin-right: 15px;
+}
+
+.footer nav a {
+    text-transform: uppercase;
+    font-size: small;
+    color: #f9f9f9f9;
+    padding-top: 0;
+}

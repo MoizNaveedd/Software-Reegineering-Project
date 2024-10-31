@@ -1,0 +1,238 @@
+body{
+    margin: 0px;
+}
+.first-sec{
+    box-sizing: border-box;
+    width: auto;
+    height: 800px;
+    background-color: #000000;
+}
+.logo{
+    max-width: 100px;
+    margin: 15px 0px 0 50px;
+}
+
+
+nav{
+    background-color: #000000;
+    overflow: hidden;
+    padding: 3px;
+    top: 0px;
+
+}
+.banner{
+    background-image: url(Pic/hero.png);
+    height:100%;
+    background-size: cover;
+background-repeat: no-repeat;
+}
+.tag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 700px;
+}
+.title h1 {
+    transform: translateX(50px);
+    font-family: 'Belleza';
+    font-style: normal;
+    color: #FFFFFF;
+    opacity: 1;
+    font-weight: 400;
+    font-size: 68px;
+    line-height: 20px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+.title p{
+    transform: translateX(190px);
+    font-family: 'Belleza';
+    font-style: normal;
+    color: #FFFFFF;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 10px;
+}
+.title p+p{
+    transform: translateX(20px);
+    font-family: 'Belleza';
+    font-style: normal;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+nav a{
+    font-family: 'roboto';
+    text-decoration: none;
+    color:#FFFFFF;
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+    display: block;
+    padding: 30px 30px;
+    float: right;
+    font-size: 14px;
+    position: relative;
+    right: 100px;
+}
+a:hover{
+    text-decoration: none;
+    color: #9c9c9c;
+}
+.second-sec{
+    height: 900px ;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 80px 50px;
+    padding: 40px 0;
+
+}
+
+#messageSent{
+    width: 300px;
+    font-family: 'Roboto';
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-left: 160px;
+}
+.left-col{
+    display: grid;
+    margin: 100px 80px 70px 50px;
+    grid-template-rows: repeat(5,100px);
+    grid-template-columns: 1fr;
+  
+}
+input ,textarea {
+    font-family: 'Roboto';
+    font-weight: 900;
+    letter-spacing: 0.5px;
+    height: 50px;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid black;
+    margin-top: 50px;
+    font-size: large;
+}
+button{
+    background-color: white;
+    color: #005436;
+    border: 1.5px solid #005436;
+    height: 50px;
+    width: 200px;
+    padding: 10px 30px;
+    margin-top: 90px;
+    margin-left: 180px;
+    font-size: 12px;
+    border-radius: 2px;
+}
+button:hover{
+    background-color: #005436;
+    color: #FFFFFF;
+}
+
+
+input:focus , textarea:focus {
+    outline: none;
+}
+
+.right-col{
+    margin: 40px 30px 40px 0;
+    display: grid;
+    grid-template-columns: 40px 1fr ;
+    grid-template-rows: 110px 220px  ;
+}
+.right-col h2{
+grid-column-start: 1;
+grid-column-end: 4;
+    font-family: 'Belleza';
+font-style: normal;
+font-weight: 400;
+font-size: 48px;
+margin-bottom: 20px;
+line-height: 48px
+}
+.right-col p{
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 27px;
+margin-top: 0px;
+margin-right: 25px;
+
+}
+.vline{
+    height: 50px;
+    margin-left: 20px;
+    border: 0.25px solid #005436;
+    width: 0;
+}
+iframe{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  width: 600px;
+  height: 400px;
+}
+.last-sec {
+    height: 330px;
+    background-color: #000000;
+}
+
+.last-sec h3 {
+    position: relative;
+    top: 80px;
+    right: 500px;
+    float: right;
+    font-family: 'Belleza';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 30px;
+    color: white;
+    z-index: 2;
+}
+
+.last-sec nav {
+    position: relative;
+    top: 150px;
+    padding-right: 10px;
+    
+    left: 40px;
+}
+.last-text {
+    color: #9C9C9C;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight:600;
+    font-size: 16px;
+    line-height: 22px;
+    max-width: 300px;
+    transform: translateY(90px);
+    margin-left: 140px;
+    letter-spacing: 0.18px;
+    text-align: justify;
+    float: left;
+}
+a i.facebook {
+    color: #9c9c9c;
+    position: relative;
+    top: 200px;
+    right: 300px;
+    margin-right: 15px;
+}
+
+.last-sec nav a {
+    text-transform: uppercase;
+    font-size: small;
+    color: #f9f9f9f9;
+    padding-top: 0;
+}

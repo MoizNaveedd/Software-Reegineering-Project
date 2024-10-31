@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="Pic/icon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="Pic/icon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="Pic/icon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Belleza&family=Inter&family=Montserrat:wght@500&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Belleza&family=Inter&family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Belleza&family=Inter&family=Montserrat:wght@500&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css" />
+    <title>Home Vices</title>
+  </head>
+  <body>
+    <section class="header">
+      <nav>
+        <img class="logo" src="Pic/home - vices-logo(4) 1.png" alt="logo" />
+            <a href="review.php" target="_blank" rel="">REVIEW</a>
+            <a href="contact.php" onclick="changePath('/'); return false;">CONTACT</a>
+            <a href="about.html" rel="">ABOUT</a>
+            <a href="book.html" target="_blank" rel="">BOOK NOW</a>
+             <a href="our-services.html" target="_blank" rel="">SERVICES</a>
+             <a href="index.html" target="_blank" rel="">HOME</a>
+      </nav>
+      <script>
+        function changePath(path) {
+            history.pushState({}, '', path);
+            loadContent(path);
+          }
+          
+          function loadContent(path) {
+            var contentElement = document.getElementById('content');
+          
+            // You can load the content dynamically based on the path using AJAX or fetch
+            // Here's a simple example to demonstrate the concept
+            if (path === '/') {
+              contentElement.innerHTML = '<h1>Home Page</h1>';
+            } else if (path === '/contact') {
+              contentElement.innerHTML = '<h1>About Us Page</h1>';
+            } else if (path === '/services') {
+              contentElement.innerHTML = '<h1>Services Page</h1>';
+            } else {
+              contentElement.innerHTML = '<h1>404 Page Not Found</h1>';
+            }
+          }
+          
+          window.addEventListener('popstate', function(event) {
+            var path = window.location.pathname;
+            loadContent(path);
+          });
+        </script>
+    </section>
+    <div class="title">
+      <h1 style="color: black;">proficient Services at your doorstep</h1>
+      <h2 class="animate">Homevices by SKU </h2>
+      <a href="book.html"><button>BOOK NOW!</button></a>
+    </div>
+    <div class="teamwork">
+      <h1>
+        minimalist solutions <br />
+        to easen your <br />
+        lifestyle
+      </h1>
+      <h3 class="animate">a few of our team’s remarkable work</h3>
+      <div class="imagess">
+        <img src="Pic/main1.jpg" alt="" />
+        <img src="Pic/main2.jpg" alt="" />
+        <img src="Pic/main3.jpg" alt="" />
+      </div>
+    </div>
+
+    <section class="ourservices">
+      <h1>Our Services</h1>
+      <div class="carousel-margin">
+        <div id="carouselExample" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-sm-4">
+                  <img
+                    class="d-block w-100 asp"
+                    src="Pic/Clear/masi 5.png"
+                    alt="Image 1"
+                  />
+                  <div class="overlay"><a href="Maasi.html">Cleaner</a></div>
+
+                </div>
+                <div class="col-sm-4">
+                  <img
+                    class="d-block w-100 asp"
+                    src="Pic/Clear/painter.jpg"
+                    alt="Image 2"
+                  />            
+                        <div class="overlay"><a href="Wall-painter.html">Painter</a></div>
+
+                </div>
+                <div class="col-sm-4">
+                  <img
+                    class="d-block w-100 asp"
+                    src="Pic/Clear/Plumber.jpg"
+                    alt="Image 3"
+                  />
+                  <div class="overlay"><a href="Plumber.html">Plumber</a></div>
+
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-sm-4">
+                  <img
+                    class="d-block w-100 asp"
+                    src="Pic/Clear/carpenter.jpg"
+                    alt="Image 4"
+                  />
+                  <div class="overlay"><a href="Carpenter.html">Carpenter</a>
+                  </div>
+
+                </div>
+                <div class="col-sm-4">
+                  <img
+                    class="d-block w-100 asp"
+                    src="Pic/Clear/mechanic.jpg"
+                    alt="Image 5"
+                  />
+                  <div class="overlay"><a href="Mechanic.html">Mechanic</a></div>
+
+                </div>
+                <div class="col-sm-4">
+                  <img
+                    class="d-block w-100 asp"
+                    src="Pic/Clear/electrician.jpg"
+                    alt="Image 6"
+                  />
+                  <div class="overlay"><a href="Electrician.html">Electrician</a></div>
+
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-sm-4">
+                  <img
+                    class="d-block w-100 asp"
+                    src="Pic/Clear/gardener.jpg"
+                    alt="Image 4"
+                  />
+                  <div class="overlay"><a href="Gardener.html">Gardener</a></div>
+
+                </div>
+                <div class="col-sm-4">
+                  <img
+                    class="d-block w-100 asp"
+                    src="Pic/Clear/chef.jpg"
+                    alt="Image 5"
+                  />
+                  <div class="overlay"><a href="Chef.html">Chef</a></div>
+
+                </div>
+                <div class="col-sm-4">
+                  <img
+                    class="d-block w-100 asp"
+                    src="Pic/Clear/beach wedding.jpg"
+                    alt="Image 6"
+                  />
+                  <div class="overlay eventplanner"><a href="Event-Planner.html">Event Planner</a></div>
+
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-sm-4">
+                  <img
+                    class="d-block w-100 asp"
+                    src="Pic/Clear/gutter.jpg"
+                    alt="Image 4"
+                  />
+                  <div class="overlay"><a href="Sewerage.html">Sewerage</a></div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <a
+            class="carousel-control-prev"
+            href="#carouselExample"
+            role="button"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#carouselExample"
+            role="button"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="feedback">
+      <p class="firstpara animate">
+        Our services are the key to your relief &nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+          >”</span
+        >
+      </p>
+
+      <h2>WORDS OF APPRECIATION</h2>
+      <p class="content">
+        About 2 weeks ago, I availed Event Planning, Painting and Cutlery
+        Services, what I loved most about the home services provided by
+        home-vices was the attention to detail. Every aspect of the job was
+        handled with care and precision, and it really showed in the end result.
+        From start to finish, the entire experience was seamless and stress-free
+        - I can't recommend them enough!
+      </p>
+      <h3>HASHIM KARDAR</h3>
+      <p class="client">Client</p>
+    </section>
+    <section class="delivery">
+      <p class="animate center">Delivering Unrivaled Home-Services <br> All Over Pakistan</p>
+    </section>
+    <section class="contact">
+      <p>DROP US AN EMAIL TODAY TO DISCUSS YOUR</p>
+      <p>SOLUTION</p>
+      <a href="contact.php"><button>CONTACT US!</button></a>
+    <br />
+    <br />
+    <section class="footer">
+      <p class="last-text">
+        We provide services infused with the spirit of advancing lifestyles and minimalist philosophies.
+      </p>
+      <a href="https://www.facebook.com/profile.php?id=100049033391215"><i class="fa fa-facebook-square fa-2x facebook" aria-hidden="true"></i></a>
+      <a href="https://www.linkedin.com"><i class="fa fa-linkedin-square fa-2x facebook" aria-hidden="true"></i></a>
+      <a href="https://www.pinterest.com"><i class="fa fa-pinterest-square fa-2x facebook" aria-hidden="true"></i></a>
+      <a href="https://twitter.com/Devil86247985"><i class="fa fa-twitter-square fa-2x facebook" aria-hidden="true"></i></a>
+      <a href="https://www.instagram.com/khushbakhtkhan_/"><i class="fa fa-instagram fa-2x facebook" aria-hidden="true"></i></a>
+      <h3>Quick Links</h3>
+      <nav>
+        <a href="contact.php" target="_blank" rel="noopener noreferrer">Contact</a>
+        <a href="about.html" target="_blank" rel="noopener noreferrer">About</a>
+        <a href="our-services.html" target="_blank" rel="noopener noreferrer">Serivces</a>
+        <a href="index.html" target="_blank" rel="noopener noreferrer">Home</a>
+      </nav>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  </body>
+</html>
